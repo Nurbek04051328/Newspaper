@@ -2,7 +2,12 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/google-fonts'],
+  modules: [
+    '@nuxt/image',
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/google-fonts',
+    'nuxt-lucide-icons'
+  ],
   css: [
     '~/assets/css/main.css',
   ],
@@ -11,5 +16,8 @@ export default defineNuxtConfig({
       'Familjen Grotesk': ['400', '500', '600', '700'],
       "Oswald": ['300','400', '500', '600', '700']
     }
+  },
+  lucide: {
+    namePrefix: 'Icon'
   }
 })
