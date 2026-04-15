@@ -1,6 +1,7 @@
 <template>
   <div class="layout-wrapper">
     <Header />
+    <MoviesRating/>
     <main>
       <slot /> 
     </main>
